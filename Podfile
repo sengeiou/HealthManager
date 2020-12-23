@@ -13,4 +13,5 @@ target 'HealthManager' do
   pod 'FileKit', '~> 5.2.0'
   pod 'SVProgressHUD'
   pod 'UMCCommon'
+  pod 'FSCalendar'
 end

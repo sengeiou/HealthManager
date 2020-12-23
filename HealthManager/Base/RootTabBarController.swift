@@ -31,10 +31,22 @@ class RootTabBarController: ESTabBarController {
         
         self.didHijackHandler = {
             [weak tabBarController] tabbarController, viewController, index in
-            
-            DispatchQueue.main.async {
-                logInfo("点击了中间的按钮")
+            let view = DetectTypeView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+            view.show()
+            view.completion = { type in
+                switch type {
+                case .bloodPressureRecord:
+                    self.bloodPressureRecord()
+                case .heartRateDetection:
+                    self.heartRateDetection()
+                case .temperatureRecord:
+                    self.temperatureRecord()
+                }
+                
             }
+//            DispatchQueue.main.async {
+//
+//            }
         }
         
         recordVC.tabBarItem = ESTabBarItem(TabBarItemContentView(), title: "记录", image: UIImage(named: "记录-2"), selectedImage: UIImage(named: "记录-1"), tag: 0)
@@ -56,6 +68,18 @@ class RootTabBarController: ESTabBarController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+    }
+    
+    func bloodPressureRecord() {
+        
+    }
+    
+    func heartRateDetection() {
+        
+    }
+    
+    func temperatureRecord() {
         
     }
 

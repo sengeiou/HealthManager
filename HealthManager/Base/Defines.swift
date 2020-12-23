@@ -64,6 +64,14 @@ func logError<T>(_ msggg: T, prefixxxx: String = "[E]") {}
 
 #endif
 
+func setViewRadius(view: UIView, corners: UIRectCorner, cornerRadius: CGFloat) {
+    let maskPath = UIBezierPath(roundedRect: view.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+    let maskLayer = CAShapeLayer()
+    maskLayer.frame = view.layer.bounds
+    maskLayer.path = maskPath.cgPath
+    view.layer.mask = maskLayer
+}
+
 // MARK: Extensions
 extension UIColor {
     static func hex(_ hex: Int, transparency:CGFloat = 1.0) -> UIColor {
