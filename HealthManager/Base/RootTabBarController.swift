@@ -72,15 +72,21 @@ class RootTabBarController: ESTabBarController {
     }
     
     func bloodPressureRecord() {
-        
+        let view = BloodWriteView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        view.show()
     }
     
     func heartRateDetection() {
+        let vc = enduranceFirstViewController()
+        let nav = NavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        AppDelegate.shareDelegate?.navigationController .present(nav, animated: true, completion: nil)
         
     }
     
     func temperatureRecord() {
-        
+        let view = TemperatureWriteView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        view.show()
     }
 
 }

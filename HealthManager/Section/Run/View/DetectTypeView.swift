@@ -70,7 +70,7 @@ class DetectTypeView: UIView {
         }
     }
 
-    // MARK - Action
+    // MARK: - Action
     @IBAction func bloodRecordAction(_ sender: Any) {
         self.completion?(DetectType.bloodPressureRecord)
         self.dismiss()

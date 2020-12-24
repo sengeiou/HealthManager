@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		49FFAF014F7A47C6A2C9A696 /* Pods_HealthManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47D60206EAE4E4C0D11F002 /* Pods_HealthManager.framework */; };
+		5E0BD5412594A99B00AEFDDD /* VipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BD53F2594A99B00AEFDDD /* VipViewController.swift */; };
+		5E0BD5422594A99B00AEFDDD /* VipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD5402594A99B00AEFDDD /* VipViewController.xib */; };
 		5E35E86025904A57005E3BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E35E85925904A57005E3BB2 /* Assets.xcassets */; };
 		5E35E86125904A57005E3BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E35E85B25904A57005E3BB2 /* LaunchScreen.storyboard */; };
 		5E35E86225904A57005E3BB2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E35E85D25904A57005E3BB2 /* Info.plist */; };
@@ -23,6 +25,14 @@
 		5E557E782591DA11007C870A /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E557E772591DA11007C870A /* UserDefaultUtil.swift */; };
 		5E557E7B2591F0DD007C870A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E557E792591F0DD007C870A /* AboutUsViewController.swift */; };
 		5E557E7C2591F0DD007C870A /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E557E7A2591F0DD007C870A /* AboutUsViewController.xib */; };
+		5E5AC08E25949A71001B32DE /* EnduranceThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5AC08C25949A71001B32DE /* EnduranceThirdViewController.swift */; };
+		5E5AC08F25949A71001B32DE /* EnduranceThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5AC08D25949A71001B32DE /* EnduranceThirdViewController.xib */; };
+		5E5AC0922594A366001B32DE /* EnduranceResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5AC0902594A366001B32DE /* EnduranceResultViewController.swift */; };
+		5E5AC0932594A366001B32DE /* EnduranceResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5AC0912594A366001B32DE /* EnduranceResultViewController.xib */; };
+		5E91B76C25946BB700B1D322 /* enduranceFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91B76A25946BB700B1D322 /* enduranceFirstViewController.swift */; };
+		5E91B76D25946BB700B1D322 /* enduranceFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E91B76B25946BB700B1D322 /* enduranceFirstViewController.xib */; };
+		5E91B7932594824000B1D322 /* EnduranceSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91B7912594824000B1D322 /* EnduranceSecondViewController.swift */; };
+		5E91B7942594824000B1D322 /* EnduranceSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E91B7922594824000B1D322 /* EnduranceSecondViewController.xib */; };
 		5E93BD802591F535005DB1E4 /* 手指动画.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5E93BD7E2591F535005DB1E4 /* 手指动画.mp4 */; };
 		5E93BD812591F535005DB1E4 /* 运动视频.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5E93BD7F2591F535005DB1E4 /* 运动视频.mp4 */; };
 		5E93BD832591F5DF005DB1E4 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93BD822591F5DF005DB1E4 /* QuestionView.swift */; };
@@ -39,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		466771E9894E5A567B780252 /* Pods-HealthManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthManager.debug.xcconfig"; path = "Target Support Files/Pods-HealthManager/Pods-HealthManager.debug.xcconfig"; sourceTree = "<group>"; };
+		5E0BD53F2594A99B00AEFDDD /* VipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipViewController.swift; sourceTree = "<group>"; };
+		5E0BD5402594A99B00AEFDDD /* VipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VipViewController.xib; sourceTree = "<group>"; };
 		5E35E82225904058005E3BB2 /* HealthManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E35E85925904A57005E3BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E35E85C25904A57005E3BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +68,14 @@
 		5E557E772591DA11007C870A /* UserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtil.swift; sourceTree = "<group>"; };
 		5E557E792591F0DD007C870A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		5E557E7A2591F0DD007C870A /* AboutUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
+		5E5AC08C25949A71001B32DE /* EnduranceThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceThirdViewController.swift; sourceTree = "<group>"; };
+		5E5AC08D25949A71001B32DE /* EnduranceThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnduranceThirdViewController.xib; sourceTree = "<group>"; };
+		5E5AC0902594A366001B32DE /* EnduranceResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceResultViewController.swift; sourceTree = "<group>"; };
+		5E5AC0912594A366001B32DE /* EnduranceResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnduranceResultViewController.xib; sourceTree = "<group>"; };
+		5E91B76A25946BB700B1D322 /* enduranceFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enduranceFirstViewController.swift; sourceTree = "<group>"; };
+		5E91B76B25946BB700B1D322 /* enduranceFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = enduranceFirstViewController.xib; sourceTree = "<group>"; };
+		5E91B7912594824000B1D322 /* EnduranceSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceSecondViewController.swift; sourceTree = "<group>"; };
+		5E91B7922594824000B1D322 /* EnduranceSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnduranceSecondViewController.xib; sourceTree = "<group>"; };
 		5E93BD7E2591F535005DB1E4 /* 手指动画.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "手指动画.mp4"; sourceTree = "<group>"; };
 		5E93BD7F2591F535005DB1E4 /* 运动视频.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "运动视频.mp4"; sourceTree = "<group>"; };
 		5E93BD822591F5DF005DB1E4 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
@@ -92,6 +112,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E0BD53D2594A98D00AEFDDD /* Vip */ = {
+			isa = PBXGroup;
+			children = (
+				5E0BD53E2594A98D00AEFDDD /* Controller */,
+			);
+			path = Vip;
+			sourceTree = "<group>";
+		};
+		5E0BD53E2594A98D00AEFDDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E0BD53F2594A99B00AEFDDD /* VipViewController.swift */,
+				5E0BD5402594A99B00AEFDDD /* VipViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5E35E81925904058005E3BB2 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +162,7 @@
 		5E35E85625904A57005E3BB2 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				5E0BD53D2594A98D00AEFDDD /* Vip */,
 				5E35E87D25908F59005E3BB2 /* Record */,
 				5E35E87925908F59005E3BB2 /* Run */,
 				5E35E87725908F59005E3BB2 /* Setting */,
@@ -206,6 +244,14 @@
 		5E35E87A25908F59005E3BB2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5E91B76A25946BB700B1D322 /* enduranceFirstViewController.swift */,
+				5E91B76B25946BB700B1D322 /* enduranceFirstViewController.xib */,
+				5E91B7912594824000B1D322 /* EnduranceSecondViewController.swift */,
+				5E91B7922594824000B1D322 /* EnduranceSecondViewController.xib */,
+				5E5AC08C25949A71001B32DE /* EnduranceThirdViewController.swift */,
+				5E5AC08D25949A71001B32DE /* EnduranceThirdViewController.xib */,
+				5E5AC0902594A366001B32DE /* EnduranceResultViewController.swift */,
+				5E5AC0912594A366001B32DE /* EnduranceResultViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -334,16 +380,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5AC08F25949A71001B32DE /* EnduranceThirdViewController.xib in Resources */,
 				5E93BD852591F5E7005DB1E4 /* QuestionView.xib in Resources */,
 				5E93BD812591F535005DB1E4 /* 运动视频.mp4 in Resources */,
+				5E91B7942594824000B1D322 /* EnduranceSecondViewController.xib in Resources */,
 				5EFB2E652591CA7B006A6AD3 /* EditRolesViewController.xib in Resources */,
 				5E557E7C2591F0DD007C870A /* AboutUsViewController.xib in Resources */,
+				5E0BD5422594A99B00AEFDDD /* VipViewController.xib in Resources */,
 				5E35E86025904A57005E3BB2 /* Assets.xcassets in Resources */,
 				5EE538BB2593965A00FDF864 /* TemperatureWriteView.xib in Resources */,
+				5E91B76D25946BB700B1D322 /* enduranceFirstViewController.xib in Resources */,
 				5E93BD8B2592E3E7005DB1E4 /* DetectTypeView.xib in Resources */,
 				5E35E88C25909017005E3BB2 /* SettingViewController.xib in Resources */,
 				5E93BD802591F535005DB1E4 /* 手指动画.mp4 in Resources */,
 				5E35E86125904A57005E3BB2 /* LaunchScreen.storyboard in Resources */,
+				5E5AC0932594A366001B32DE /* EnduranceResultViewController.xib in Resources */,
 				5E35E86225904A57005E3BB2 /* Info.plist in Resources */,
 				5E35E88825908FFF005E3BB2 /* RecordViewController.xib in Resources */,
 				5EE538BF2593A62300FDF864 /* BloodWriteView.xib in Resources */,
@@ -401,6 +452,8 @@
 			files = (
 				5E557E7B2591F0DD007C870A /* AboutUsViewController.swift in Sources */,
 				5EE538B92593964F00FDF864 /* TemperatureWriteView.swift in Sources */,
+				5E91B76C25946BB700B1D322 /* enduranceFirstViewController.swift in Sources */,
+				5E5AC0922594A366001B32DE /* EnduranceResultViewController.swift in Sources */,
 				5E35E86A25907EF4005E3BB2 /* ViewController.swift in Sources */,
 				5E35E87625908E64005E3BB2 /* RootTabBarController.swift in Sources */,
 				5EFB2E642591CA7B006A6AD3 /* EditRolesViewController.swift in Sources */,
@@ -409,9 +462,12 @@
 				5E35E88725908FFF005E3BB2 /* RecordViewController.swift in Sources */,
 				5E35E86725904CC5005E3BB2 /* Defines.swift in Sources */,
 				5E93BD832591F5DF005DB1E4 /* QuestionView.swift in Sources */,
+				5E5AC08E25949A71001B32DE /* EnduranceThirdViewController.swift in Sources */,
 				5E35E88B25909017005E3BB2 /* SettingViewController.swift in Sources */,
 				5EE538BD2593A61900FDF864 /* BloodWriteView.swift in Sources */,
+				5E0BD5412594A99B00AEFDDD /* VipViewController.swift in Sources */,
 				5E35E86325904A57005E3BB2 /* AppDelegate.swift in Sources */,
+				5E91B7932594824000B1D322 /* EnduranceSecondViewController.swift in Sources */,
 				5E557E782591DA11007C870A /* UserDefaultUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
