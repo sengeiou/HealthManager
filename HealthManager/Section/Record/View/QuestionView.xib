@@ -13,6 +13,8 @@
             <connections>
                 <outlet property="contentView" destination="XDD-M7-8lJ" id="F62-kx-7Gu"/>
                 <outlet property="contentViewBottomSpace" destination="oTX-nk-hiQ" id="h8a-y5-EJ0"/>
+                <outlet property="textView" destination="iwA-gE-nLM" id="J7T-ZE-Z7o"/>
+                <outlet property="titleLb" destination="RvN-Jf-W3b" id="UEL-LO-aNe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="JUo-yS-LF3"/>
             </connections>
         </placeholder>

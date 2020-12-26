@@ -69,6 +69,14 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
         }
     }
     
+    @IBAction func vipAction(_ sender: Any) {
+        let vc = VipViewController()
+        let nav = NavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(nav, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func lastMonth(_ sender: Any) {
         let lastDate = self.gregorian.date(byAdding: .month, value: -1, to: self.calendar.currentPage) ?? Date()
         self.calendar.setCurrentPage(lastDate, animated: true)

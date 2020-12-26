@@ -12,6 +12,11 @@ class QuestionView: UIView {
     @IBOutlet var view: UIView!
     @IBOutlet var contentView: UIView!
     @IBOutlet var contentViewBottomSpace: NSLayoutConstraint!
+    @IBOutlet var titleLb: UILabel!
+    @IBOutlet var textView: UITextView!
+    var titleStr = ""
+    var contentStr = ""
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)

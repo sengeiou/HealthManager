@@ -77,7 +77,11 @@ class RootTabBarController: ESTabBarController {
     }
     
     func heartRateDetection() {
-        let vc = enduranceFirstViewController()
+//        let vc = enduranceFirstViewController()
+//        let nav = NavigationController(rootViewController: vc)
+//        nav.modalPresentationStyle = .fullScreen
+//        AppDelegate.shareDelegate?.navigationController .present(nav, animated: true, completion: nil)
+        let vc = HeartRateTipViewController()
         let nav = NavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         AppDelegate.shareDelegate?.navigationController .present(nav, animated: true, completion: nil)

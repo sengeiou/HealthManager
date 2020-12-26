@@ -14,4 +14,5 @@ target 'HealthManager' do
   pod 'SVProgressHUD'
   pod 'UMCCommon'
   pod 'FSCalendar'
+  pod 'lottie-ios'
 end

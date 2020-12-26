@@ -45,6 +45,23 @@ class SettingViewController: ViewController {
             self.headImageView.image = self.sexStatus == 0 ? UIImage(named: "男性") : UIImage(named: "女性")
             self.sexLabel.text = String(format: "%@岁/%@", self.ageStatus, self.sexStatus == 0 ? "男" : "女")
             self.heightLabel.text = String(format: "身高:%@cm 体重:%@kg", self.heightStatus, self.weightStatus)
+            /*
+                “克莱托指数”
+                体重(kg)÷身高²(m)
+                20-25正常，20以下瘦，25以上胖 你的体形是正常的哦～
+            */
+            guard let weight = Float(self.weightStatus), let height = Float(self.heightStatus)  else {
+                fatalError("身高体重问题")
+            }
+            let klt:Float = weight/(height/100 * height/100)
+            self.numLabel.text = String(format: "%.1f", klt)
+            if klt > 25.0 {
+                self.resultLabel.text = "你的体形是偏胖的哦～"
+            }else if klt < 20 {
+                self.resultLabel.text = "你的体形是偏瘦的哦～"
+            }else {
+                self.resultLabel.text = "你的体形是正常的哦～"
+            }
         }
     }
 
@@ -56,6 +73,8 @@ class SettingViewController: ViewController {
     
     @IBAction func questionAction(_ sender: Any) {
         let view = QuestionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        view.titleLb.text = "克莱托指数"
+        view.textView.text = "“克莱托指数”\n体重(kg)÷身高²(m)\n20-25正常，20以下瘦，25以上胖"
         view.show()
     }
     

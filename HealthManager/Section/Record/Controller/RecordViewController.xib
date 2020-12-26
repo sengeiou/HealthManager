@@ -23,6 +23,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="渐变背景" translatesAutoresizingMaskIntoConstraints="NO" id="zJf-s2-oBD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-Ph-7Ym">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                     <subviews>
@@ -63,12 +66,24 @@
                                 <action selector="nextMonth:" destination="-1" eventType="touchUpInside" id="ibb-es-4Ah"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-OI-DY3">
+                            <rect key="frame" x="360" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="Slz-99-81h"/>
+                            </constraints>
+                            <state key="normal" image="付费"/>
+                            <state key="selected" image="日历-上"/>
+                            <connections>
+                                <action selector="vipAction:" destination="-1" eventType="touchUpInside" id="drK-hj-mp5"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="ILC-ps-vpV" firstAttribute="centerY" secondItem="Tyt-Ph-7Ym" secondAttribute="centerY" id="1OQ-ce-7ck"/>
                         <constraint firstAttribute="height" constant="44" id="2wv-Es-1EH"/>
                         <constraint firstItem="vEL-6V-t9P" firstAttribute="top" secondItem="Tyt-Ph-7Ym" secondAttribute="top" id="F74-uN-Att"/>
+                        <constraint firstAttribute="trailing" secondItem="Jud-OI-DY3" secondAttribute="trailing" constant="10" id="RfE-Pv-FMf"/>
                         <constraint firstAttribute="bottom" secondItem="Hc7-cW-LeN" secondAttribute="bottom" id="SEk-Mr-vpZ"/>
                         <constraint firstAttribute="bottom" secondItem="vEL-6V-t9P" secondAttribute="bottom" id="Uwa-xs-wOB"/>
                         <constraint firstItem="Hc7-cW-LeN" firstAttribute="top" secondItem="Tyt-Ph-7Ym" secondAttribute="top" id="W5B-z6-zK3"/>
@@ -77,6 +92,8 @@
                         <constraint firstItem="ILC-ps-vpV" firstAttribute="leading" secondItem="Q2L-05-sgW" secondAttribute="trailing" id="fCK-wH-L84"/>
                         <constraint firstItem="Hc7-cW-LeN" firstAttribute="leading" secondItem="Tyt-Ph-7Ym" secondAttribute="leading" constant="10" id="isp-re-X0R"/>
                         <constraint firstItem="ILC-ps-vpV" firstAttribute="centerX" secondItem="Tyt-Ph-7Ym" secondAttribute="centerX" id="lso-jt-9be"/>
+                        <constraint firstItem="Jud-OI-DY3" firstAttribute="top" secondItem="Tyt-Ph-7Ym" secondAttribute="top" id="m7f-Jj-AvQ"/>
+                        <constraint firstAttribute="bottom" secondItem="Jud-OI-DY3" secondAttribute="bottom" id="twR-kp-7sT"/>
                         <constraint firstItem="Q2L-05-sgW" firstAttribute="top" secondItem="Tyt-Ph-7Ym" secondAttribute="top" id="xgZ-cX-flW"/>
                     </constraints>
                 </view>
@@ -259,10 +276,11 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.31764705882352939" green="0.43529411764705883" blue="1" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Tyt-Ph-7Ym" firstAttribute="top" secondItem="itc-j6-DDW" secondAttribute="bottom" id="3L4-vO-2Ko"/>
                 <constraint firstItem="itc-j6-DDW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Ce-wN-9jZ"/>
+                <constraint firstAttribute="bottom" secondItem="zJf-s2-oBD" secondAttribute="bottom" id="7Zq-ER-flQ"/>
                 <constraint firstAttribute="trailing" secondItem="BKP-6A-LBe" secondAttribute="trailing" id="7q8-pX-lAg"/>
                 <constraint firstItem="BKP-6A-LBe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Ql-3v-LiI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tyt-Ph-7Ym" secondAttribute="trailing" id="A6r-M6-giU"/>
@@ -271,9 +289,12 @@
                 <constraint firstItem="Tyt-Ph-7Ym" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KGc-Z6-26Z"/>
                 <constraint firstItem="aqB-mM-TCW" firstAttribute="top" secondItem="Tyt-Ph-7Ym" secondAttribute="bottom" constant="15" id="Pao-K2-OM1"/>
                 <constraint firstItem="BKP-6A-LBe" firstAttribute="top" secondItem="aqB-mM-TCW" secondAttribute="bottom" constant="15" id="SKk-CP-Tf0"/>
+                <constraint firstItem="zJf-s2-oBD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TgB-4F-XvU"/>
                 <constraint firstItem="aqB-mM-TCW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="VF2-1v-JbV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aqB-mM-TCW" secondAttribute="trailing" constant="15" id="cfH-Pv-bcd"/>
                 <constraint firstAttribute="trailing" secondItem="itc-j6-DDW" secondAttribute="trailing" id="l6V-YR-BZp"/>
+                <constraint firstItem="zJf-s2-oBD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lLA-2m-iQX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zJf-s2-oBD" secondAttribute="trailing" id="uC8-a4-SrK"/>
                 <constraint firstItem="itc-j6-DDW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vkN-MI-Vf3"/>
                 <constraint firstItem="BKP-6A-LBe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x7w-2g-m9a"/>
             </constraints>
@@ -281,11 +302,13 @@
         </view>
     </objects>
     <resources>
+        <image name="付费" width="25" height="25"/>
         <image name="前翻" width="21" height="21"/>
         <image name="后翻" width="21" height="21"/>
         <image name="心率-切换" width="120" height="30"/>
         <image name="日历" width="25" height="25"/>
         <image name="日历-上" width="25" height="25"/>
+        <image name="渐变背景" width="375" height="667"/>
         <image name="问号" width="21" height="21"/>
     </resources>
 </document>

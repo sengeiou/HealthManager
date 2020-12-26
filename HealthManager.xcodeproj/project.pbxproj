@@ -29,6 +29,9 @@
 		5E5AC08F25949A71001B32DE /* EnduranceThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5AC08D25949A71001B32DE /* EnduranceThirdViewController.xib */; };
 		5E5AC0922594A366001B32DE /* EnduranceResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5AC0902594A366001B32DE /* EnduranceResultViewController.swift */; };
 		5E5AC0932594A366001B32DE /* EnduranceResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5AC0912594A366001B32DE /* EnduranceResultViewController.xib */; };
+		5E5BCB382596DED100AAACB7 /* HeartRateResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BCB362596DED100AAACB7 /* HeartRateResultViewController.swift */; };
+		5E5BCB392596DED100AAACB7 /* HeartRateResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5BCB372596DED100AAACB7 /* HeartRateResultViewController.xib */; };
+		5E5BCB3B2596E56E00AAACB7 /* jiance.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E5BCB3A2596E56E00AAACB7 /* jiance.json */; };
 		5E91B76C25946BB700B1D322 /* enduranceFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91B76A25946BB700B1D322 /* enduranceFirstViewController.swift */; };
 		5E91B76D25946BB700B1D322 /* enduranceFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E91B76B25946BB700B1D322 /* enduranceFirstViewController.xib */; };
 		5E91B7932594824000B1D322 /* EnduranceSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91B7912594824000B1D322 /* EnduranceSecondViewController.swift */; };
@@ -39,6 +42,15 @@
 		5E93BD852591F5E7005DB1E4 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E93BD842591F5E7005DB1E4 /* QuestionView.xib */; };
 		5E93BD892592E3DC005DB1E4 /* DetectTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93BD882592E3DC005DB1E4 /* DetectTypeView.swift */; };
 		5E93BD8B2592E3E7005DB1E4 /* DetectTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E93BD8A2592E3E7005DB1E4 /* DetectTypeView.xib */; };
+		5EB94FAC25976677006FECFC /* HeartRateResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB94FAA25976677006FECFC /* HeartRateResultTableViewCell.swift */; };
+		5EB94FAD25976677006FECFC /* HeartRateResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB94FAB25976677006FECFC /* HeartRateResultTableViewCell.xib */; };
+		5EBFE56F2595891800F59A5F /* HeartRateTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE56D2595891800F59A5F /* HeartRateTipViewController.swift */; };
+		5EBFE5702595891800F59A5F /* HeartRateTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFE56E2595891800F59A5F /* HeartRateTipViewController.xib */; };
+		5EBFE5732595896400F59A5F /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE5712595896400F59A5F /* HeartRateViewController.swift */; };
+		5EBFE5742595896400F59A5F /* HeartRateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EBFE5722595896400F59A5F /* HeartRateViewController.xib */; };
+		5EBFE5772595F53800F59A5F /* RateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE5762595F53800F59A5F /* RateFilter.m */; };
+		5EBFE57A2595F57D00F59A5F /* PulseDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE5792595F57D00F59A5F /* PulseDetector.mm */; };
+		5EBFE57D2595F5F200F59A5F /* HeatBeatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE57C2595F5F200F59A5F /* HeatBeatManager.m */; };
 		5EE538B92593964F00FDF864 /* TemperatureWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE538B82593964F00FDF864 /* TemperatureWriteView.swift */; };
 		5EE538BB2593965A00FDF864 /* TemperatureWriteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE538BA2593965A00FDF864 /* TemperatureWriteView.xib */; };
 		5EE538BD2593A61900FDF864 /* BloodWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE538BC2593A61900FDF864 /* BloodWriteView.swift */; };
@@ -72,6 +84,9 @@
 		5E5AC08D25949A71001B32DE /* EnduranceThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnduranceThirdViewController.xib; sourceTree = "<group>"; };
 		5E5AC0902594A366001B32DE /* EnduranceResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceResultViewController.swift; sourceTree = "<group>"; };
 		5E5AC0912594A366001B32DE /* EnduranceResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnduranceResultViewController.xib; sourceTree = "<group>"; };
+		5E5BCB362596DED100AAACB7 /* HeartRateResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateResultViewController.swift; sourceTree = "<group>"; };
+		5E5BCB372596DED100AAACB7 /* HeartRateResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateResultViewController.xib; sourceTree = "<group>"; };
+		5E5BCB3A2596E56E00AAACB7 /* jiance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jiance.json; sourceTree = "<group>"; };
 		5E91B76A25946BB700B1D322 /* enduranceFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enduranceFirstViewController.swift; sourceTree = "<group>"; };
 		5E91B76B25946BB700B1D322 /* enduranceFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = enduranceFirstViewController.xib; sourceTree = "<group>"; };
 		5E91B7912594824000B1D322 /* EnduranceSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceSecondViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +97,18 @@
 		5E93BD842591F5E7005DB1E4 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		5E93BD882592E3DC005DB1E4 /* DetectTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTypeView.swift; sourceTree = "<group>"; };
 		5E93BD8A2592E3E7005DB1E4 /* DetectTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetectTypeView.xib; sourceTree = "<group>"; };
+		5EB94FAA25976677006FECFC /* HeartRateResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateResultTableViewCell.swift; sourceTree = "<group>"; };
+		5EB94FAB25976677006FECFC /* HeartRateResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateResultTableViewCell.xib; sourceTree = "<group>"; };
+		5EBFE56D2595891800F59A5F /* HeartRateTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTipViewController.swift; sourceTree = "<group>"; };
+		5EBFE56E2595891800F59A5F /* HeartRateTipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateTipViewController.xib; sourceTree = "<group>"; };
+		5EBFE5712595896400F59A5F /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
+		5EBFE5722595896400F59A5F /* HeartRateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateViewController.xib; sourceTree = "<group>"; };
+		5EBFE5752595F53800F59A5F /* RateFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateFilter.h; sourceTree = "<group>"; };
+		5EBFE5762595F53800F59A5F /* RateFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateFilter.m; sourceTree = "<group>"; };
+		5EBFE5782595F57D00F59A5F /* PulseDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulseDetector.h; sourceTree = "<group>"; };
+		5EBFE5792595F57D00F59A5F /* PulseDetector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PulseDetector.mm; sourceTree = "<group>"; };
+		5EBFE57B2595F5F200F59A5F /* HeatBeatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeatBeatManager.h; sourceTree = "<group>"; };
+		5EBFE57C2595F5F200F59A5F /* HeatBeatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatBeatManager.m; sourceTree = "<group>"; };
 		5EE538B82593964F00FDF864 /* TemperatureWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureWriteView.swift; sourceTree = "<group>"; };
 		5EE538BA2593965A00FDF864 /* TemperatureWriteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureWriteView.xib; sourceTree = "<group>"; };
 		5EE538BC2593A61900FDF864 /* BloodWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodWriteView.swift; sourceTree = "<group>"; };
@@ -173,6 +200,12 @@
 		5E35E85725904A57005E3BB2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5EBFE5752595F53800F59A5F /* RateFilter.h */,
+				5EBFE5762595F53800F59A5F /* RateFilter.m */,
+				5EBFE5782595F57D00F59A5F /* PulseDetector.h */,
+				5EBFE5792595F57D00F59A5F /* PulseDetector.mm */,
+				5EBFE57B2595F5F200F59A5F /* HeatBeatManager.h */,
+				5EBFE57C2595F5F200F59A5F /* HeatBeatManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -181,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				5E35E85925904A57005E3BB2 /* Assets.xcassets */,
+				5E5BCB3A2596E56E00AAACB7 /* jiance.json */,
 				5E93BD7E2591F535005DB1E4 /* 手指动画.mp4 */,
 				5E93BD7F2591F535005DB1E4 /* 运动视频.mp4 */,
 			);
@@ -252,6 +286,12 @@
 				5E5AC08D25949A71001B32DE /* EnduranceThirdViewController.xib */,
 				5E5AC0902594A366001B32DE /* EnduranceResultViewController.swift */,
 				5E5AC0912594A366001B32DE /* EnduranceResultViewController.xib */,
+				5EBFE56D2595891800F59A5F /* HeartRateTipViewController.swift */,
+				5EBFE56E2595891800F59A5F /* HeartRateTipViewController.xib */,
+				5EBFE5712595896400F59A5F /* HeartRateViewController.swift */,
+				5EBFE5722595896400F59A5F /* HeartRateViewController.xib */,
+				5E5BCB362596DED100AAACB7 /* HeartRateResultViewController.swift */,
+				5E5BCB372596DED100AAACB7 /* HeartRateResultViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +308,8 @@
 			children = (
 				5E93BD882592E3DC005DB1E4 /* DetectTypeView.swift */,
 				5E93BD8A2592E3E7005DB1E4 /* DetectTypeView.xib */,
+				5EB94FAA25976677006FECFC /* HeartRateResultTableViewCell.swift */,
+				5EB94FAB25976677006FECFC /* HeartRateResultTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,6 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB94FAD25976677006FECFC /* HeartRateResultTableViewCell.xib in Resources */,
 				5E5AC08F25949A71001B32DE /* EnduranceThirdViewController.xib in Resources */,
 				5E93BD852591F5E7005DB1E4 /* QuestionView.xib in Resources */,
 				5E93BD812591F535005DB1E4 /* 运动视频.mp4 in Resources */,
@@ -395,9 +438,13 @@
 				5E93BD802591F535005DB1E4 /* 手指动画.mp4 in Resources */,
 				5E35E86125904A57005E3BB2 /* LaunchScreen.storyboard in Resources */,
 				5E5AC0932594A366001B32DE /* EnduranceResultViewController.xib in Resources */,
+				5E5BCB3B2596E56E00AAACB7 /* jiance.json in Resources */,
+				5EBFE5742595896400F59A5F /* HeartRateViewController.xib in Resources */,
 				5E35E86225904A57005E3BB2 /* Info.plist in Resources */,
+				5EBFE5702595891800F59A5F /* HeartRateTipViewController.xib in Resources */,
 				5E35E88825908FFF005E3BB2 /* RecordViewController.xib in Resources */,
 				5EE538BF2593A62300FDF864 /* BloodWriteView.xib in Resources */,
+				5E5BCB392596DED100AAACB7 /* HeartRateResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,23 +497,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBFE5732595896400F59A5F /* HeartRateViewController.swift in Sources */,
 				5E557E7B2591F0DD007C870A /* AboutUsViewController.swift in Sources */,
 				5EE538B92593964F00FDF864 /* TemperatureWriteView.swift in Sources */,
 				5E91B76C25946BB700B1D322 /* enduranceFirstViewController.swift in Sources */,
 				5E5AC0922594A366001B32DE /* EnduranceResultViewController.swift in Sources */,
+				5EB94FAC25976677006FECFC /* HeartRateResultTableViewCell.swift in Sources */,
 				5E35E86A25907EF4005E3BB2 /* ViewController.swift in Sources */,
 				5E35E87625908E64005E3BB2 /* RootTabBarController.swift in Sources */,
 				5EFB2E642591CA7B006A6AD3 /* EditRolesViewController.swift in Sources */,
 				5E35E86D25907F17005E3BB2 /* NavigationController.swift in Sources */,
 				5E93BD892592E3DC005DB1E4 /* DetectTypeView.swift in Sources */,
+				5EBFE57A2595F57D00F59A5F /* PulseDetector.mm in Sources */,
 				5E35E88725908FFF005E3BB2 /* RecordViewController.swift in Sources */,
+				5E5BCB382596DED100AAACB7 /* HeartRateResultViewController.swift in Sources */,
 				5E35E86725904CC5005E3BB2 /* Defines.swift in Sources */,
+				5EBFE57D2595F5F200F59A5F /* HeatBeatManager.m in Sources */,
 				5E93BD832591F5DF005DB1E4 /* QuestionView.swift in Sources */,
 				5E5AC08E25949A71001B32DE /* EnduranceThirdViewController.swift in Sources */,
 				5E35E88B25909017005E3BB2 /* SettingViewController.swift in Sources */,
+				5EBFE56F2595891800F59A5F /* HeartRateTipViewController.swift in Sources */,
 				5EE538BD2593A61900FDF864 /* BloodWriteView.swift in Sources */,
 				5E0BD5412594A99B00AEFDDD /* VipViewController.swift in Sources */,
 				5E35E86325904A57005E3BB2 /* AppDelegate.swift in Sources */,
+				5EBFE5772595F53800F59A5F /* RateFilter.m in Sources */,
 				5E91B7932594824000B1D322 /* EnduranceSecondViewController.swift in Sources */,
 				5E557E782591DA11007C870A /* UserDefaultUtil.swift in Sources */,
 			);

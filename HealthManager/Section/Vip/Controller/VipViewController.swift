@@ -11,6 +11,7 @@ class VipViewController: ViewController {
 
     @IBOutlet var restoreBtn: UIButton!
     @IBOutlet var payBtn: UIButton!
+    @IBOutlet var topImageView: UIImageView!
     @IBOutlet var topImageHeight: NSLayoutConstraint!
     @IBOutlet var tipLb: UILabel!
     @IBOutlet var timeLb: UILabel!
@@ -33,11 +34,19 @@ class VipViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if APP.isIphoneX {
+            self.topImageHeight.constant = 240
+            self.topImageView.image = UIImage(named: "付费-顶部X")
+        }else {
+            self.topImageHeight.constant = 154.5
+            self.topImageView.image = UIImage(named: "付费-顶部")
+        }
         
+        updateView()
     }
 
     func updateView() {
-        if self.view.height > 200 {
+        if self.view.height < 200 {
             self.restoreBtn.isHidden = true
             self.priceLb.isHidden = true
             self.tipLb.isHidden = true
