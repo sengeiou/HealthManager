@@ -139,7 +139,6 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="heartRateDetection:" destination="-1" eventType="touchUpInside" id="6i2-xg-CNg"/>
                                         <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="J5k-U6-rkc"/>
                                     </connections>
                                 </button>

@@ -11,6 +11,12 @@ class EnduranceResultViewController: ViewController {
     
     @IBOutlet var resultNumLb: UILabel!
     @IBOutlet var resultColorLb: UILabel!
+    var rateSum:Int = 0 //心率总和
+    
+    @UserDefaultStringValue(key: "ageStatus", defaultValue: "")
+    var ageStatus
+    @UserDefaultIntValue(key: "ruffier", defaultValue: 0)
+    var ruffier//耐力值
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         get {
@@ -20,8 +26,38 @@ class EnduranceResultViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        self.ruffier = (rateSum - 200)/10
+        self.resultNumLb.text = String(format: "%d", ruffier)
+        if self.ageStatus != "" && (Int(self.ageStatus) ?? 0 > 40) {
+            if ruffier >= -5 && ruffier < 10 {
+                self.resultColorLb.text = "心脏功能很好"
+                self.resultColorLb.textColor = .hex(0x54A300)
+            }else if ruffier >= 10 && ruffier < 20 {
+                self.resultColorLb.text = "心脏功能一般"
+                self.resultColorLb.textColor = .hex(0x69DDCB)
+            }else {
+                self.resultColorLb.text = "心脏功能弱"
+                self.resultColorLb.textColor = .hex(0xFF1709)
+            }
+        }else {
+            if ruffier >= -5 && ruffier < 0 {
+                self.resultColorLb.text = "心脏功能很好"
+                self.resultColorLb.textColor = .hex(0x54A300)
+            }else if ruffier >= 0 && ruffier < 5 {
+                self.resultColorLb.text = "心脏功能还可以"
+                self.resultColorLb.textColor = .hex(0x69DDCB)
+            }else if ruffier >= 5 && ruffier < 10 {
+                self.resultColorLb.text = "心脏功能一般"
+                self.resultColorLb.textColor = .hex(0x7B69DD)
+            }else if ruffier >= 10 && ruffier < 20 {
+                self.resultColorLb.text = "心脏功能弱"
+                self.resultColorLb.textColor = .hex(0xDD8468)
+            }else {
+                self.resultColorLb.text = "心脏功能弱"
+                self.resultColorLb.textColor = .hex(0xFF1709)
+            }
+        }
+        NotificationCenter.default.post(name: APP.ruffierChanged, object: nil)
     }
 
 

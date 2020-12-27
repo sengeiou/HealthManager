@@ -20,11 +20,11 @@ class EditRolesViewController: ViewController, UITextFieldDelegate {
     var isSetPeople
     @UserDefaultIntValue(key: "sexStatus", defaultValue: 0)
     var sexStatus
-    @UserDefaultStringValue(key: "ageStatus", defaultValue: "--")
+    @UserDefaultStringValue(key: "ageStatus", defaultValue: "")
     var ageStatus
-    @UserDefaultStringValue(key: "heightStatus", defaultValue: "--")
+    @UserDefaultStringValue(key: "heightStatus", defaultValue: "")
     var heightStatus
-    @UserDefaultStringValue(key: "weightStatus", defaultValue: "--")
+    @UserDefaultStringValue(key: "weightStatus", defaultValue: "")
     var weightStatus
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -38,9 +38,9 @@ class EditRolesViewController: ViewController, UITextFieldDelegate {
         self.view.backgroundColor = .hex(0xF8F9FB)
         self.manCheckBtn.isSelected = self.sexStatus == 0 ? true : false
         self.womanCheckBtn.isSelected = self.sexStatus == 1 ? true : false
-        self.ageTf.text = self.ageStatus == "--" ? "" : self.ageStatus
-        self.heightTf.text = self.heightStatus == "--" ? "" : self.heightStatus
-        self.weightTf.text = self.weightStatus == "--" ? "" : self.weightStatus
+        self.ageTf.text = self.ageStatus == "" ? "" : self.ageStatus
+        self.heightTf.text = self.heightStatus == "" ? "" : self.heightStatus
+        self.weightTf.text = self.weightStatus == "" ? "" : self.weightStatus
         self.ageTf.keyboardType = .numberPad
         self.heightTf.keyboardType = .numberPad
         self.weightTf.keyboardType = .numberPad

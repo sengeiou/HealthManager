@@ -19,11 +19,11 @@ class SettingViewController: ViewController {
     var isSetPeople
     @UserDefaultIntValue(key: "sexStatus", defaultValue: 0)
     var sexStatus
-    @UserDefaultStringValue(key: "ageStatus", defaultValue: "--")
+    @UserDefaultStringValue(key: "ageStatus", defaultValue: "")
     var ageStatus
-    @UserDefaultStringValue(key: "heightStatus", defaultValue: "--")
+    @UserDefaultStringValue(key: "heightStatus", defaultValue: "")
     var heightStatus
-    @UserDefaultStringValue(key: "weightStatus", defaultValue: "--")
+    @UserDefaultStringValue(key: "weightStatus", defaultValue: "")
     var weightStatus
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

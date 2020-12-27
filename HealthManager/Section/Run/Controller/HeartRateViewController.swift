@@ -8,9 +8,10 @@
 import UIKit
 import Lottie
 
+typealias HeartRateDetectionCompletion = (Int)->()
+
 class HeartRateViewController: ViewController {
 
-    
     @IBOutlet var backBtn: UIButton!
     @IBOutlet var contentView: UIView!
     @IBOutlet var animationLb: UILabel!
@@ -20,8 +21,7 @@ class HeartRateViewController: ViewController {
     var timer = Timer()
     var rateArr = [NSNumber]()
     var firstErrorDate:Date?
-    
-    
+    var completion:HeartRateDetectionCompletion? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,14 +76,16 @@ class HeartRateViewController: ViewController {
             timer.fireDate = Date.distantFuture
             timer.invalidate()
             if self.rateArr.count > 3 {
+                let rate = calculationRate()
                 if isPop {
                     //跳转到结果页面
-                    let rate = calculationRate()
                     let vc = HeartRateResultViewController()
                     vc.rateNum = rate
                     self.navigationController?.pushViewController(vc, animated: true)
                 }else {
                     //返回数据给到耐力测试
+                    self.completion?(rate)
+                    self.navigationController?.dismiss(animated: true, completion: nil)
                 }
             }else {
                 //视为检测不到手指的情况

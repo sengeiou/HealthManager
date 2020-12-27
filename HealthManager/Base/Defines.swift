@@ -28,6 +28,9 @@ enum APP {
         return AppDelegate.shareDelegate!.window!.safeAreaInsets.bottom > 0
     }()
     
+    static let ruffierChanged = Notification.Name("HM.ruffierChanged")
+    static let heartRateChanged = Notification.Name("HM.heartRateChanged")
+    
     static let hmFilesPath: Path = {
         let path = Path.userDocuments + "hmFiles"
         if !path.exists {

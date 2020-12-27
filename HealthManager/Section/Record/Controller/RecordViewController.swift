@@ -15,8 +15,17 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
     @IBOutlet var calendarHeight: NSLayoutConstraint!
     @IBOutlet var scrollView: UIScrollView!
     
+    
+    @IBOutlet var ruffierLb: UILabel!
+    @IBOutlet var resultColorLb: UILabel!
+    
+    
     let gregorian:Calendar = Calendar.init(identifier: .gregorian)
     
+    @UserDefaultStringValue(key: "ageStatus", defaultValue: "")
+    var ageStatus
+    @UserDefaultIntValue(key: "ruffier", defaultValue: 0)
+    var ruffier//耐力值
     
     fileprivate lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -35,6 +44,8 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ruffierChanged), name: APP.ruffierChanged, object: nil)
         
         self.setUpCalendar()
     }
@@ -60,7 +71,45 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
         return String(format: "%d年%d月", year!, month!)
     }
     
-    // MARK:- Action
+    func reloadViewData() {
+        ruffierChanged()
+    }
+    
+    // MARK: - Notification
+    @objc func ruffierChanged() {
+        self.ruffierLb.text = String(self.ruffier)
+        if self.ageStatus != "" && (Int(self.ageStatus) ?? 0 > 40) {
+            if ruffier >= -5 && ruffier < 10 {
+                self.resultColorLb.text = "心脏功能很好"
+                self.resultColorLb.textColor = .hex(0x54A300)
+            }else if ruffier >= 10 && ruffier < 20 {
+                self.resultColorLb.text = "心脏功能一般"
+                self.resultColorLb.textColor = .hex(0x69DDCB)
+            }else {
+                self.resultColorLb.text = "心脏功能弱"
+                self.resultColorLb.textColor = .hex(0xFF1709)
+            }
+        }else {
+            if ruffier >= -5 && ruffier < 0 {
+                self.resultColorLb.text = "心脏功能很好"
+                self.resultColorLb.textColor = .hex(0x54A300)
+            }else if ruffier >= 0 && ruffier < 5 {
+                self.resultColorLb.text = "心脏功能还可以"
+                self.resultColorLb.textColor = .hex(0x69DDCB)
+            }else if ruffier >= 5 && ruffier < 10 {
+                self.resultColorLb.text = "心脏功能一般"
+                self.resultColorLb.textColor = .hex(0x7B69DD)
+            }else if ruffier >= 10 && ruffier < 20 {
+                self.resultColorLb.text = "心脏功能弱"
+                self.resultColorLb.textColor = .hex(0xDD8468)
+            }else {
+                self.resultColorLb.text = "心脏功能弱"
+                self.resultColorLb.textColor = .hex(0xFF1709)
+            }
+        }
+    }
+    
+    // MARK: - Action
     @IBAction func showCalendar(_ sender: UIButton) {
         if self.calendar.scope == .month {
             self.calendar.setScope(.week, animated: true)
@@ -85,6 +134,40 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
     @IBAction func nextMonth(_ sender: Any) {
         let nextDate = self.gregorian.date(byAdding: .month, value: 1, to: self.calendar.currentPage) ?? Date()
         self.calendar.setCurrentPage(nextDate, animated: true)
+    }
+    
+    @IBAction func changeViewAction(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            //心率
+            break
+        case 1:
+            //血压
+            break
+        case 2:
+            //体温
+            break
+        default: break
+        }
+    }
+    
+    @IBAction func questionAction(_ sender: UIButton) {
+        switch sender.tag {
+        case 5:
+            //平均
+            break
+        case 6:
+            //耐力测试
+            break
+        default: break
+        }
+    }
+    
+    @IBAction func testAction(_ sender: Any) {
+        let vc = enduranceFirstViewController()
+        let nav = NavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        AppDelegate.shareDelegate?.navigationController .present(nav, animated: true, completion: nil)
     }
     
     // MARK:- UIGestureRecognizerDelegate
