@@ -15,6 +15,9 @@ let InAppPurchasesYearKey = ""
 let AppInStoreID = ""
 let UMengAppKey = "5fe03d140b4a4938464c7daa"
 
+let UserURL = "https://www.baidu.com"
+let PrivacyURL = "https://www.baidu.com"
+
 let screenWidth:CGFloat = UIScreen.main.bounds.size.width
 let screenHeight:CGFloat = UIScreen.main.bounds.size.height
 

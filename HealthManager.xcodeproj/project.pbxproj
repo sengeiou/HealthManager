@@ -42,6 +42,23 @@
 		5E93BD852591F5E7005DB1E4 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E93BD842591F5E7005DB1E4 /* QuestionView.xib */; };
 		5E93BD892592E3DC005DB1E4 /* DetectTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93BD882592E3DC005DB1E4 /* DetectTypeView.swift */; };
 		5E93BD8B2592E3E7005DB1E4 /* DetectTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E93BD8A2592E3E7005DB1E4 /* DetectTypeView.xib */; };
+		5E97C4D6259B3E6700C1899B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4D5259B3E6600C1899B /* WebViewController.swift */; };
+		5E97C4D8259B3E7A00C1899B /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4D7259B3E7A00C1899B /* IAPManager.swift */; };
+		5E97C4E9259B404500C1899B /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4DA259B404500C1899B /* SKProduct+LocalizedPrice.swift */; };
+		5E97C4EA259B404500C1899B /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4DB259B404500C1899B /* InAppProductQueryRequest.swift */; };
+		5E97C4EB259B404500C1899B /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4DC259B404500C1899B /* InAppReceiptRefreshRequest.swift */; };
+		5E97C4EC259B404500C1899B /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4DD259B404500C1899B /* SwiftyStoreKit+Types.swift */; };
+		5E97C4ED259B404500C1899B /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4DE259B404500C1899B /* InAppReceipt.swift */; };
+		5E97C4EE259B404500C1899B /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4DF259B404500C1899B /* SwiftyStoreKit.swift */; };
+		5E97C4EF259B404500C1899B /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E0259B404500C1899B /* ProductsInfoController.swift */; };
+		5E97C4F0259B404500C1899B /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E1259B404500C1899B /* CompleteTransactionsController.swift */; };
+		5E97C4F1259B404500C1899B /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E2259B404500C1899B /* PaymentsController.swift */; };
+		5E97C4F2259B404500C1899B /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E3259B404500C1899B /* OS.swift */; };
+		5E97C4F3259B404500C1899B /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E4259B404500C1899B /* RestorePurchasesController.swift */; };
+		5E97C4F4259B404500C1899B /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E5259B404500C1899B /* PaymentQueueController.swift */; };
+		5E97C4F5259B404500C1899B /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E6259B404500C1899B /* InAppReceiptVerificator.swift */; };
+		5E97C4F6259B404500C1899B /* SKProductDiscount+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E7259B404500C1899B /* SKProductDiscount+LocalizedPrice.swift */; };
+		5E97C4F7259B404500C1899B /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C4E8259B404500C1899B /* AppleReceiptValidator.swift */; };
 		5EB94FAC25976677006FECFC /* HeartRateResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB94FAA25976677006FECFC /* HeartRateResultTableViewCell.swift */; };
 		5EB94FAD25976677006FECFC /* HeartRateResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB94FAB25976677006FECFC /* HeartRateResultTableViewCell.xib */; };
 		5EBFE56F2595891800F59A5F /* HeartRateTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE56D2595891800F59A5F /* HeartRateTipViewController.swift */; };
@@ -103,6 +120,23 @@
 		5E93BD842591F5E7005DB1E4 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		5E93BD882592E3DC005DB1E4 /* DetectTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTypeView.swift; sourceTree = "<group>"; };
 		5E93BD8A2592E3E7005DB1E4 /* DetectTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetectTypeView.xib; sourceTree = "<group>"; };
+		5E97C4D5259B3E6600C1899B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5E97C4D7259B3E7A00C1899B /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		5E97C4DA259B404500C1899B /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		5E97C4DB259B404500C1899B /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		5E97C4DC259B404500C1899B /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		5E97C4DD259B404500C1899B /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+		5E97C4DE259B404500C1899B /* InAppReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceipt.swift; sourceTree = "<group>"; };
+		5E97C4DF259B404500C1899B /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		5E97C4E0259B404500C1899B /* ProductsInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsInfoController.swift; sourceTree = "<group>"; };
+		5E97C4E1259B404500C1899B /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTransactionsController.swift; sourceTree = "<group>"; };
+		5E97C4E2259B404500C1899B /* PaymentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsController.swift; sourceTree = "<group>"; };
+		5E97C4E3259B404500C1899B /* OS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
+		5E97C4E4259B404500C1899B /* RestorePurchasesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorePurchasesController.swift; sourceTree = "<group>"; };
+		5E97C4E5259B404500C1899B /* PaymentQueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQueueController.swift; sourceTree = "<group>"; };
+		5E97C4E6259B404500C1899B /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptVerificator.swift; sourceTree = "<group>"; };
+		5E97C4E7259B404500C1899B /* SKProductDiscount+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProductDiscount+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		5E97C4E8259B404500C1899B /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleReceiptValidator.swift; sourceTree = "<group>"; };
 		5EB94FAA25976677006FECFC /* HeartRateResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateResultTableViewCell.swift; sourceTree = "<group>"; };
 		5EB94FAB25976677006FECFC /* HeartRateResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateResultTableViewCell.xib; sourceTree = "<group>"; };
 		5EBFE56D2595891800F59A5F /* HeartRateTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTipViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +246,7 @@
 		5E35E85725904A57005E3BB2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5E97C4D9259B404500C1899B /* SwiftyStoreKit */,
 				5EBFE5752595F53800F59A5F /* RateFilter.h */,
 				5EBFE5762595F53800F59A5F /* RateFilter.m */,
 				5EBFE5782595F57D00F59A5F /* PulseDetector.h */,
@@ -255,6 +290,8 @@
 				5E35E86925907EF4005E3BB2 /* ViewController.swift */,
 				5E35E86C25907F17005E3BB2 /* NavigationController.swift */,
 				5E35E87525908E64005E3BB2 /* RootTabBarController.swift */,
+				5E97C4D5259B3E6600C1899B /* WebViewController.swift */,
+				5E97C4D7259B3E7A00C1899B /* IAPManager.swift */,
 				5E35E86F25908548005E3BB2 /* HealthManager-Bridging-Header.h */,
 			);
 			path = Base;
@@ -369,6 +406,28 @@
 				5ECFA3B72599E9C700C7CF8E /* HeartRateCollectionViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5E97C4D9259B404500C1899B /* SwiftyStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E97C4E8259B404500C1899B /* AppleReceiptValidator.swift */,
+				5E97C4E1259B404500C1899B /* CompleteTransactionsController.swift */,
+				5E97C4DB259B404500C1899B /* InAppProductQueryRequest.swift */,
+				5E97C4DE259B404500C1899B /* InAppReceipt.swift */,
+				5E97C4DC259B404500C1899B /* InAppReceiptRefreshRequest.swift */,
+				5E97C4E6259B404500C1899B /* InAppReceiptVerificator.swift */,
+				5E97C4E3259B404500C1899B /* OS.swift */,
+				5E97C4E5259B404500C1899B /* PaymentQueueController.swift */,
+				5E97C4E2259B404500C1899B /* PaymentsController.swift */,
+				5E97C4E0259B404500C1899B /* ProductsInfoController.swift */,
+				5E97C4E4259B404500C1899B /* RestorePurchasesController.swift */,
+				5E97C4DA259B404500C1899B /* SKProduct+LocalizedPrice.swift */,
+				5E97C4E7259B404500C1899B /* SKProductDiscount+LocalizedPrice.swift */,
+				5E97C4DF259B404500C1899B /* SwiftyStoreKit.swift */,
+				5E97C4DD259B404500C1899B /* SwiftyStoreKit+Types.swift */,
+			);
+			path = SwiftyStoreKit;
 			sourceTree = "<group>";
 		};
 		ECD51ECFBB5D483089FE2A07 /* Pods */ = {
@@ -516,32 +575,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E97C4F5259B404500C1899B /* InAppReceiptVerificator.swift in Sources */,
 				5EBFE5732595896400F59A5F /* HeartRateViewController.swift in Sources */,
 				5E557E7B2591F0DD007C870A /* AboutUsViewController.swift in Sources */,
+				5E97C4F3259B404500C1899B /* RestorePurchasesController.swift in Sources */,
 				5EE538B92593964F00FDF864 /* TemperatureWriteView.swift in Sources */,
 				5E91B76C25946BB700B1D322 /* enduranceFirstViewController.swift in Sources */,
+				5E97C4F6259B404500C1899B /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				5E5AC0922594A366001B32DE /* EnduranceResultViewController.swift in Sources */,
 				5EB94FAC25976677006FECFC /* HeartRateResultTableViewCell.swift in Sources */,
 				5E35E86A25907EF4005E3BB2 /* ViewController.swift in Sources */,
+				5E97C4F0259B404500C1899B /* CompleteTransactionsController.swift in Sources */,
 				5E35E87625908E64005E3BB2 /* RootTabBarController.swift in Sources */,
 				5ECFA3A42599C7A600C7CF8E /* Temperature.swift in Sources */,
 				5EFB2E642591CA7B006A6AD3 /* EditRolesViewController.swift in Sources */,
 				5E35E86D25907F17005E3BB2 /* NavigationController.swift in Sources */,
+				5E97C4EE259B404500C1899B /* SwiftyStoreKit.swift in Sources */,
 				5E93BD892592E3DC005DB1E4 /* DetectTypeView.swift in Sources */,
 				5EBFE57A2595F57D00F59A5F /* PulseDetector.mm in Sources */,
 				5E35E88725908FFF005E3BB2 /* RecordViewController.swift in Sources */,
+				5E97C4F1259B404500C1899B /* PaymentsController.swift in Sources */,
 				5E5BCB382596DED100AAACB7 /* HeartRateResultViewController.swift in Sources */,
+				5E97C4ED259B404500C1899B /* InAppReceipt.swift in Sources */,
+				5E97C4D6259B3E6700C1899B /* WebViewController.swift in Sources */,
+				5E97C4EC259B404500C1899B /* SwiftyStoreKit+Types.swift in Sources */,
 				5ECFA3B82599E9C700C7CF8E /* HeartRateCollectionViewCell.swift in Sources */,
+				5E97C4E9259B404500C1899B /* SKProduct+LocalizedPrice.swift in Sources */,
+				5E97C4F7259B404500C1899B /* AppleReceiptValidator.swift in Sources */,
 				5E35E86725904CC5005E3BB2 /* Defines.swift in Sources */,
 				5EBFE57D2595F5F200F59A5F /* HeatBeatManager.m in Sources */,
 				5E93BD832591F5DF005DB1E4 /* QuestionView.swift in Sources */,
 				5E5AC08E25949A71001B32DE /* EnduranceThirdViewController.swift in Sources */,
+				5E97C4EB259B404500C1899B /* InAppReceiptRefreshRequest.swift in Sources */,
+				5E97C4F2259B404500C1899B /* OS.swift in Sources */,
 				5ECFA3A02599C76D00C7CF8E /* HeartRate.swift in Sources */,
+				5E97C4EF259B404500C1899B /* ProductsInfoController.swift in Sources */,
 				5ECFA3A22599C78D00C7CF8E /* BloodPressure.swift in Sources */,
 				5E35E88B25909017005E3BB2 /* SettingViewController.swift in Sources */,
+				5E97C4D8259B3E7A00C1899B /* IAPManager.swift in Sources */,
+				5E97C4F4259B404500C1899B /* PaymentQueueController.swift in Sources */,
 				5EBFE56F2595891800F59A5F /* HeartRateTipViewController.swift in Sources */,
 				5EE538BD2593A61900FDF864 /* BloodWriteView.swift in Sources */,
 				5E0BD5412594A99B00AEFDDD /* VipViewController.swift in Sources */,
+				5E97C4EA259B404500C1899B /* InAppProductQueryRequest.swift in Sources */,
 				5ECFA39E2599C72B00C7CF8E /* DBManager.swift in Sources */,
 				5E35E86325904A57005E3BB2 /* AppDelegate.swift in Sources */,
 				5EBFE5772595F53800F59A5F /* RateFilter.m in Sources */,

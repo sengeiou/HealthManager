@@ -10,6 +10,7 @@ import ESTabBarController_swift
 
 class RootTabBarController: ESTabBarController {
     
+    var isTipsVip:Bool = false
     let recordVC = RecordViewController()
     let runVC = RecordViewController()
     let settingVC = SettingViewController()
@@ -68,7 +69,16 @@ class RootTabBarController: ESTabBarController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        if !isTipsVip {
+            if !IAPManager.shared.purchased {
+                let vc = VipViewController()
+                let nav = NavigationController(rootViewController: vc)
+                nav.modalPresentationStyle = .fullScreen
+                AppDelegate.shareDelegate?.navigationController.present(nav, animated: true, completion: nil)
+            }
+        }
+        isTipsVip = true
+
     }
     
     func bloodPressureRecord() {

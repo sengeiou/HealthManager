@@ -17,7 +17,12 @@ class HeartRateCollectionViewCell: UICollectionViewCell {
         didSet {
             numLb.text = heartRate?.num
             timeLb.text = heartRate?.timeString
-            colorViewHeight.constant = CGFloat(15 + (heartRate?.num.int ?? 0 / 120 * 100))
+            let height = CGFloat(15 + (heartRate?.num.int ?? 0 / 120 * 100))
+            if height > 116.0 {
+                colorViewHeight.constant = 116.0
+            }else {
+                colorViewHeight.constant = height
+            }
             if colorViewHeight.constant <= 15 {
                 colorView.backgroundColor = .hex(0xE3E3E3)
                 numLb.isHidden = true
@@ -31,7 +36,12 @@ class HeartRateCollectionViewCell: UICollectionViewCell {
         didSet {
             numLb.text = bloodPressure?.num
             timeLb.text = bloodPressure?.timeString
-            colorViewHeight.constant = CGFloat(15 + (bloodPressure?.num.int ?? 0 / 120 * 100))
+            let height = CGFloat(15 + (bloodPressure?.num.int ?? 0 / 140 * 100))
+            if height > 116.0 {
+                colorViewHeight.constant = 116.0
+            }else {
+                colorViewHeight.constant = height
+            }
             if colorViewHeight.constant <= 15 {
                 colorView.backgroundColor = .hex(0xE3E3E3)
                 numLb.isHidden = true
@@ -45,7 +55,13 @@ class HeartRateCollectionViewCell: UICollectionViewCell {
         didSet {
             numLb.text = temperature?.num
             timeLb.text = temperature?.timeString
-            colorViewHeight.constant = CGFloat(15 + (temperature?.num.float() / 120 * 100))
+            let num: Float = temperature?.num.float() ?? 0.0
+            let height = CGFloat(15 + ( num / 50 * 100))
+            if height > 116.0 {
+                colorViewHeight.constant = 116
+            }else {
+                colorViewHeight.constant = height
+            }
             if colorViewHeight.constant <= 15 {
                 colorView.backgroundColor = .hex(0xE3E3E3)
                 numLb.isHidden = true

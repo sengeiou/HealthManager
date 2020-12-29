@@ -94,6 +94,8 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
         self.setUpCalendar()
         self.reloadInfo()
         self.recordType = .heartRate
+        self.ruffierChanged()
+        
     }
 
     func setUpCalendar() {
@@ -128,6 +130,15 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
         self.heartRateArr.removeAll()
         self.bloodPressureArr.removeAll()
         self.temperatureArr.removeAll()
+        self.averageHeartRate = "--"
+        self.averageBloodPressure = "--"
+        self.averageTemperature = "--"
+        self.maxHeartRate = "--"
+        self.minHeartRate = "--"
+        self.maxBloodPressure = "--"
+        self.minBloodPressure = "--"
+        self.maxTemperature = "--"
+        self.minTemperature = "--"
         self.heartRateArr = HeartRate.query(dateString: selectDateStr) ?? []
         self.bloodPressureArr = BloodPressure.query(dateString: selectDateStr) ?? []
         self.temperatureArr = Temperature.query(dateString: selectDateStr) ?? []
@@ -409,6 +420,7 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
             calendar.setCurrentPage(date, animated: true)
         }
         self.reloadInfo()
+        self.reloadViewType()
     }
 
     func calendarCurrentPageDidChange(_ calendar: FSCalendar) {

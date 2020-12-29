@@ -34,6 +34,8 @@ class VipViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        MobClick.event("vippagenum")
+        
         if APP.isIphoneX {
             self.topImageHeight.constant = 240
             self.topImageView.image = UIImage(named: "付费-顶部X")
@@ -46,13 +48,14 @@ class VipViewController: ViewController {
     }
 
     func updateView() {
-        if self.view.height < 200 {
+        if IAPManager.shared.purchased {
             self.restoreBtn.isHidden = true
             self.priceLb.isHidden = true
             self.tipLb.isHidden = true
             self.timeLb.isHidden = false
             self.payBtn.isHidden = true
             self.bottomView.isHidden = true
+            self.timeLb.text = "已成为尊贵的高级会员\n请尽情享受会员功能"
         }else {
             let str = "3天免费试用\n之后¥298/每年自动续订"
             let attStr:NSMutableAttributedString = NSMutableAttributedString(string: str)
@@ -76,19 +79,45 @@ class VipViewController: ViewController {
     }
     
     @IBAction func restoreAction(_ sender: Any) {
-        
+        SVProgressHUD.show()
+        unableUserInteraction()
+        IAPManager.shared.restorePurchase { [weak self] (success, error) in
+            DispatchQueue.main.async {
+                SVProgressHUD.dismiss()
+                self?.enableUserInteraction()
+                if success {
+                    self?.updateView()
+                }else {
+                    SVProgressHUD.showError(withStatus: error)
+                }
+            }
+        }
     }
     
     @IBAction func payAction(_ sender: Any) {
-        
+        SVProgressHUD.show()
+        unableUserInteraction()
+        IAPManager.shared.purchase(InAppPurchasesYearKey) { [weak self] (success, error) in
+            DispatchQueue.main.async {
+                SVProgressHUD.dismiss()
+                self?.enableUserInteraction()
+                if success {
+                    self?.updateView()
+                }else {
+                    SVProgressHUD.showError(withStatus: error)
+                }
+            }
+        }
     }
     
     @IBAction func userAction(_ sender: Any) {
-        
+        let vc = WebViewController(title: "用户协议", url: URL(string: UserURL))
+        self.navigationController?.pushViewController(vc)
     }
     
     @IBAction func privacyAction(_ sender: Any) {
-        
+        let vc = WebViewController(title: "隐私协议", url: URL(string: PrivacyURL))
+        self.navigationController?.pushViewController(vc)
     }
     
     func enableUserInteraction() {

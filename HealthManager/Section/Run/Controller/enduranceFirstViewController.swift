@@ -84,6 +84,7 @@ class enduranceFirstViewController: ViewController {
         let alert = UIAlertController.init(title: "手指放置好了吗？", message: "请确认", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "不再提示", style: .default, handler: { (cancel) in
             self.detectionShowTip = true
+            self.heartRateDetection(AnyClass.self)
         }))
         alert.addAction(UIAlertAction(title: "好了", style: .default, handler: { (retry) in
             let vc = HeartRateViewController()
