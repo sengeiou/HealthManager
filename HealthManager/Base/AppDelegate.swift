@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configSDK() {
         SVProgressHUD.setMaximumDismissTimeInterval(2)
         SVProgressHUD.setBackgroundColor(UIColor(hex: 0x444444, transparency: 0.88)!)
-        SVProgressHUD.setInfoImage(UIImage())
+        //SVProgressHUD.setInfoImage(UIImage())
         SVProgressHUD.setMinimumSize(CGSize(width: 100, height: 40))
         SVProgressHUD.setDefaultStyle(.dark)
         

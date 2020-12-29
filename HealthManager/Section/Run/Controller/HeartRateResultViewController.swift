@@ -22,10 +22,26 @@ class HeartRateResultViewController: ViewController {
     var rateNum:Int?
     var items: [HeatRateMob] = [HeatRateMob]()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get {
+            return .default
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         rateLb.text = String(format: "%d", rateNum ?? 0)
+        //保存测试数据
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy/MM/dd"
+        let timeFormat = DateFormatter()
+        timeFormat.dateFormat = "hh:mm"
+        let currentDateStr = dateFormat.string(from: Date())
+        let currentTimeStr = timeFormat.string(from: Date())
+        let heartRate = HeartRate(num: rateLb.text ?? "0", dateString: currentDateStr, timeString: currentTimeStr)
+        HeartRate.insert(heartRate: heartRate)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.contentInset.top = 25
@@ -52,14 +68,15 @@ class HeartRateResultViewController: ViewController {
 
     // MARK: - Action
     @IBAction func backAction(_ sender: Any) {
-        //保存本地数据
-        //跟新本地数据的通知
+        //刷新本地数据的通知
+        NotificationCenter.default.post(name: APP.homeDateChanged, object: nil)
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveAction(_ sender: Any) {
-        //保存本地数据
-        //跟新本地数据的通知
+        //刷新本地数据的通知
+        NotificationCenter.default.post(name: APP.homeDateChanged, object: nil)
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
 }

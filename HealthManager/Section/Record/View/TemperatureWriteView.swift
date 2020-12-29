@@ -38,6 +38,7 @@ class TemperatureWriteView: UIView {
         self.view.backgroundColor = .clear
         self.view.frame = self.bounds
         self.addSubview(self.view)
+        self.temperatureTF.keyboardType = .decimalPad
         IQKeyboardManager.shared.shouldResignOnTouchOutside = false
     }
     
@@ -64,6 +65,21 @@ class TemperatureWriteView: UIView {
     
     // MARK: - Action
     @IBAction func saveAction(_ sender: Any) {
+        guard let str = self.temperatureTF.text, str.count > 0 else {
+            SVProgressHUD.showInfo(withStatus: "请输入温度值")
+            return
+        }
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy/MM/dd"
+        let timeFormat = DateFormatter()
+        timeFormat.dateFormat = "hh:mm"
+        let currentDateStr = dateFormat.string(from: Date())
+        let currentTimeStr = timeFormat.string(from: Date())
+        let temperature = Temperature(num: str, dateString: currentDateStr, timeString: currentTimeStr)
+        Temperature.insert(temperature: temperature)
+        SVProgressHUD.showSuccess(withStatus: "保存成功")
+        //刷新本地数据的通知
+        NotificationCenter.default.post(name: APP.homeDateChanged, object: nil)
         dismiss()
     }
     

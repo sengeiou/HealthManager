@@ -29,7 +29,8 @@ enum APP {
     }()
     
     static let ruffierChanged = Notification.Name("HM.ruffierChanged")
-    static let heartRateChanged = Notification.Name("HM.heartRateChanged")
+    ///心率血压体温数据发生变化
+    static let homeDateChanged = Notification.Name("HM.homeDateChanged")
     
     static let hmFilesPath: Path = {
         let path = Path.userDocuments + "hmFiles"

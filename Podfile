@@ -15,4 +15,5 @@ target 'HealthManager' do
   pod 'UMCCommon'
   pod 'FSCalendar'
   pod 'lottie-ios'
+  pod 'GRDB.swift'
 end

@@ -51,6 +51,12 @@
 		5EBFE5772595F53800F59A5F /* RateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE5762595F53800F59A5F /* RateFilter.m */; };
 		5EBFE57A2595F57D00F59A5F /* PulseDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE5792595F57D00F59A5F /* PulseDetector.mm */; };
 		5EBFE57D2595F5F200F59A5F /* HeatBeatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBFE57C2595F5F200F59A5F /* HeatBeatManager.m */; };
+		5ECFA39E2599C72B00C7CF8E /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA39D2599C72B00C7CF8E /* DBManager.swift */; };
+		5ECFA3A02599C76D00C7CF8E /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA39F2599C76D00C7CF8E /* HeartRate.swift */; };
+		5ECFA3A22599C78D00C7CF8E /* BloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA3A12599C78D00C7CF8E /* BloodPressure.swift */; };
+		5ECFA3A42599C7A600C7CF8E /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA3A32599C7A600C7CF8E /* Temperature.swift */; };
+		5ECFA3B82599E9C700C7CF8E /* HeartRateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA3B62599E9C700C7CF8E /* HeartRateCollectionViewCell.swift */; };
+		5ECFA3B92599E9C700C7CF8E /* HeartRateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFA3B72599E9C700C7CF8E /* HeartRateCollectionViewCell.xib */; };
 		5EE538B92593964F00FDF864 /* TemperatureWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE538B82593964F00FDF864 /* TemperatureWriteView.swift */; };
 		5EE538BB2593965A00FDF864 /* TemperatureWriteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE538BA2593965A00FDF864 /* TemperatureWriteView.xib */; };
 		5EE538BD2593A61900FDF864 /* BloodWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE538BC2593A61900FDF864 /* BloodWriteView.swift */; };
@@ -109,6 +115,12 @@
 		5EBFE5792595F57D00F59A5F /* PulseDetector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PulseDetector.mm; sourceTree = "<group>"; };
 		5EBFE57B2595F5F200F59A5F /* HeatBeatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeatBeatManager.h; sourceTree = "<group>"; };
 		5EBFE57C2595F5F200F59A5F /* HeatBeatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatBeatManager.m; sourceTree = "<group>"; };
+		5ECFA39D2599C72B00C7CF8E /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		5ECFA39F2599C76D00C7CF8E /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		5ECFA3A12599C78D00C7CF8E /* BloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressure.swift; sourceTree = "<group>"; };
+		5ECFA3A32599C7A600C7CF8E /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		5ECFA3B62599E9C700C7CF8E /* HeartRateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateCollectionViewCell.swift; sourceTree = "<group>"; };
+		5ECFA3B72599E9C700C7CF8E /* HeartRateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateCollectionViewCell.xib; sourceTree = "<group>"; };
 		5EE538B82593964F00FDF864 /* TemperatureWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureWriteView.swift; sourceTree = "<group>"; };
 		5EE538BA2593965A00FDF864 /* TemperatureWriteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureWriteView.xib; sourceTree = "<group>"; };
 		5EE538BC2593A61900FDF864 /* BloodWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodWriteView.swift; sourceTree = "<group>"; };
@@ -206,6 +218,10 @@
 				5EBFE5792595F57D00F59A5F /* PulseDetector.mm */,
 				5EBFE57B2595F5F200F59A5F /* HeatBeatManager.h */,
 				5EBFE57C2595F5F200F59A5F /* HeatBeatManager.m */,
+				5ECFA39D2599C72B00C7CF8E /* DBManager.swift */,
+				5ECFA39F2599C76D00C7CF8E /* HeartRate.swift */,
+				5ECFA3A12599C78D00C7CF8E /* BloodPressure.swift */,
+				5ECFA3A32599C7A600C7CF8E /* Temperature.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -349,6 +365,8 @@
 				5EE538BA2593965A00FDF864 /* TemperatureWriteView.xib */,
 				5EE538BC2593A61900FDF864 /* BloodWriteView.swift */,
 				5EE538BE2593A62300FDF864 /* BloodWriteView.xib */,
+				5ECFA3B62599E9C700C7CF8E /* HeartRateCollectionViewCell.swift */,
+				5ECFA3B72599E9C700C7CF8E /* HeartRateCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -437,6 +455,7 @@
 				5E35E88C25909017005E3BB2 /* SettingViewController.xib in Resources */,
 				5E93BD802591F535005DB1E4 /* 手指动画.mp4 in Resources */,
 				5E35E86125904A57005E3BB2 /* LaunchScreen.storyboard in Resources */,
+				5ECFA3B92599E9C700C7CF8E /* HeartRateCollectionViewCell.xib in Resources */,
 				5E5AC0932594A366001B32DE /* EnduranceResultViewController.xib in Resources */,
 				5E5BCB3B2596E56E00AAACB7 /* jiance.json in Resources */,
 				5EBFE5742595896400F59A5F /* HeartRateViewController.xib in Resources */,
@@ -505,20 +524,25 @@
 				5EB94FAC25976677006FECFC /* HeartRateResultTableViewCell.swift in Sources */,
 				5E35E86A25907EF4005E3BB2 /* ViewController.swift in Sources */,
 				5E35E87625908E64005E3BB2 /* RootTabBarController.swift in Sources */,
+				5ECFA3A42599C7A600C7CF8E /* Temperature.swift in Sources */,
 				5EFB2E642591CA7B006A6AD3 /* EditRolesViewController.swift in Sources */,
 				5E35E86D25907F17005E3BB2 /* NavigationController.swift in Sources */,
 				5E93BD892592E3DC005DB1E4 /* DetectTypeView.swift in Sources */,
 				5EBFE57A2595F57D00F59A5F /* PulseDetector.mm in Sources */,
 				5E35E88725908FFF005E3BB2 /* RecordViewController.swift in Sources */,
 				5E5BCB382596DED100AAACB7 /* HeartRateResultViewController.swift in Sources */,
+				5ECFA3B82599E9C700C7CF8E /* HeartRateCollectionViewCell.swift in Sources */,
 				5E35E86725904CC5005E3BB2 /* Defines.swift in Sources */,
 				5EBFE57D2595F5F200F59A5F /* HeatBeatManager.m in Sources */,
 				5E93BD832591F5DF005DB1E4 /* QuestionView.swift in Sources */,
 				5E5AC08E25949A71001B32DE /* EnduranceThirdViewController.swift in Sources */,
+				5ECFA3A02599C76D00C7CF8E /* HeartRate.swift in Sources */,
+				5ECFA3A22599C78D00C7CF8E /* BloodPressure.swift in Sources */,
 				5E35E88B25909017005E3BB2 /* SettingViewController.swift in Sources */,
 				5EBFE56F2595891800F59A5F /* HeartRateTipViewController.swift in Sources */,
 				5EE538BD2593A61900FDF864 /* BloodWriteView.swift in Sources */,
 				5E0BD5412594A99B00AEFDDD /* VipViewController.swift in Sources */,
+				5ECFA39E2599C72B00C7CF8E /* DBManager.swift in Sources */,
 				5E35E86325904A57005E3BB2 /* AppDelegate.swift in Sources */,
 				5EBFE5772595F53800F59A5F /* RateFilter.m in Sources */,
 				5E91B7932594824000B1D322 /* EnduranceSecondViewController.swift in Sources */,
