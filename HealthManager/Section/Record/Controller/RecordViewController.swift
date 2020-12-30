@@ -189,9 +189,9 @@ class RecordViewController: ViewController, FSCalendarDelegate, FSCalendarDataSo
                 x + y
             }
             let aver = sum/Float(tNumArr.count)
-            self.minTemperature = String(min ?? 0.0)
-            self.maxTemperature = String(max ?? 0.0)
-            self.averageTemperature = String(aver)
+            self.minTemperature = String(format: "%.1f", min ?? 0.0)
+            self.maxTemperature = String(format: "%.1f", max ?? 0.0)
+            self.averageTemperature = String(format: "%.1f", aver)
         }
     }
     

@@ -53,7 +53,8 @@ class HeartRateCollectionViewCell: UICollectionViewCell {
     }
     var temperature: Temperature? {
         didSet {
-            numLb.text = temperature?.num
+            let nfloat = temperature?.num.float()
+            numLb.text = String(format: "%.1f", nfloat ?? 0.0)
             timeLb.text = temperature?.timeString
             let num: Float = temperature?.num.float() ?? 0.0
             let height = CGFloat(15 + ( num / 50 * 100))

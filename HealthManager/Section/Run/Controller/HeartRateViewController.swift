@@ -142,6 +142,7 @@ class HeartRateViewController: ViewController {
                 self.timer.fireDate = Date.distantFuture
                 self.timer.invalidate()
                 self.firstErrorDate = nil
+                HeatBeatManager.sharedInstance().stop()
                 if self.isPop {
                     self.navigationController?.popViewController(animated: true)
                 }else {

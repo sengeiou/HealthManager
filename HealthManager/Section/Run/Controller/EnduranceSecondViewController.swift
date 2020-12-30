@@ -115,10 +115,21 @@ class EnduranceSecondViewController: ViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+    //返回提示框
+    func showBackAlert() {
+        let alert = UIAlertController.init(title: "返回将丢失数据", message: "请确认", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (back) in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: .default, handler: { (cancel) in
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 
     // MARK: - Action
     @IBAction func backAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        showBackAlert()
     }
     
     

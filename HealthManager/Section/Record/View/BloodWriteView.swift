@@ -69,6 +69,10 @@ class BloodWriteView: UIView {
             SVProgressHUD.showInfo(withStatus: "请输入血压值")
             return
         }
+        guard let str2 = self.temperatureTF.text, str2.int ?? 0 < 1000 else {
+            SVProgressHUD.showInfo(withStatus: "请输入正确血压值")
+            return
+        }
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "yyyy/MM/dd"
         let timeFormat = DateFormatter()

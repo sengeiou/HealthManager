@@ -254,7 +254,7 @@
                                     <color key="textColor" red="0.32549019610000002" green="0.63529411759999999" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-uw-4vB">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-uw-4vB">
                                     <rect key="frame" x="10" y="13" width="110" height="84"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="110" id="vcs-ZY-syN"/>

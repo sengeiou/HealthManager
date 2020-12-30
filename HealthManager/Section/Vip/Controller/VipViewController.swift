@@ -111,12 +111,14 @@ class VipViewController: ViewController {
     }
     
     @IBAction func userAction(_ sender: Any) {
-        let vc = WebViewController(title: "用户协议", url: URL(string: UserURL))
+        let url = Bundle.main.url(forResource: "hmuse", withExtension: "html")
+        let vc = WebViewController(title: "用户协议", url: url)
         self.navigationController?.pushViewController(vc)
     }
     
     @IBAction func privacyAction(_ sender: Any) {
-        let vc = WebViewController(title: "隐私协议", url: URL(string: PrivacyURL))
+        let url = Bundle.main.url(forResource: "hmprivate", withExtension: "html")
+        let vc = WebViewController(title: "隐私协议", url: url)
         self.navigationController?.pushViewController(vc)
     }
     

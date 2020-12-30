@@ -69,6 +69,10 @@ class TemperatureWriteView: UIView {
             SVProgressHUD.showInfo(withStatus: "请输入温度值")
             return
         }
+        guard let str2 = self.temperatureTF.text, str2.float() ?? 0.0 < 100.0 else {
+            SVProgressHUD.showInfo(withStatus: "请输入温度值")
+            return
+        }
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "yyyy/MM/dd"
         let timeFormat = DateFormatter()
