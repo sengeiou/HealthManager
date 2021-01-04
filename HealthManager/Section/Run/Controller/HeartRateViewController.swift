@@ -77,6 +77,39 @@ class HeartRateViewController: ViewController {
             timer.invalidate()
             if self.rateArr.count > 3 {
                 let rate = calculationRate()
+                if !IAPManager.shared.purchased {
+                    let vc = VipViewController()
+                    let nav = NavigationController(rootViewController: vc)
+                    nav.modalPresentationStyle = .fullScreen
+                    self.present(nav, animated: true, completion: nil)
+                    vc.cancel = {
+                        DispatchQueue.main.async {
+                            self.animationTime = 0
+                            self.timer.fireDate = Date.distantFuture
+                            self.timer.invalidate()
+                            self.firstErrorDate = nil
+                            HeatBeatManager.sharedInstance().stop()
+                            if self.isPop {
+                                self.navigationController?.popViewController(animated: false)
+                            }else {
+                                self.navigationController?.dismiss(animated: false, completion: nil)
+                            }
+                        }
+                    }
+                    vc.success = {
+                        if self.isPop {
+                            //跳转到结果页面
+                            let vc = HeartRateResultViewController()
+                            vc.rateNum = rate
+                            self.navigationController?.pushViewController(vc, animated: false)
+                        }else {
+                            //返回数据给到耐力测试
+                            self.completion?(rate)
+                            self.navigationController?.dismiss(animated: false, completion: nil)
+                        }
+                    }
+                    return
+                }
                 if isPop {
                     //跳转到结果页面
                     let vc = HeartRateResultViewController()

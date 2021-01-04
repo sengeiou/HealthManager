@@ -33,7 +33,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="ARE-yx-6xZ"/>
                             </constraints>
-                            <state key="normal" image="关闭"/>
+                            <state key="normal" image="baise-guanbi"/>
                             <connections>
                                 <action selector="backAction:" destination="-1" eventType="touchUpInside" id="HEl-Od-b4o"/>
                             </connections>
@@ -122,7 +122,7 @@
         </view>
     </objects>
     <resources>
-        <image name="关闭" width="25" height="25"/>
+        <image name="baise-guanbi" width="25" height="25"/>
         <image name="渐变背景" width="375" height="667"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

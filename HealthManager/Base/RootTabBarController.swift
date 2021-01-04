@@ -82,6 +82,13 @@ class RootTabBarController: ESTabBarController {
     }
     
     func bloodPressureRecord() {
+        if !IAPManager.shared.purchased {
+            let vc = VipViewController()
+            let nav = NavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            AppDelegate.shareDelegate?.navigationController.present(nav, animated: true, completion: nil)
+            return
+        }
         let view = BloodWriteView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
         view.show()
     }
@@ -95,6 +102,13 @@ class RootTabBarController: ESTabBarController {
     }
     
     func temperatureRecord() {
+        if !IAPManager.shared.purchased {
+            let vc = VipViewController()
+            let nav = NavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            AppDelegate.shareDelegate?.navigationController.present(nav, animated: true, completion: nil)
+            return
+        }
         let view = TemperatureWriteView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
         view.show()
     }

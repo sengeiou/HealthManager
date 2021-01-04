@@ -7,6 +7,9 @@
 
 import UIKit
 
+typealias PurchaseSuccessCompletion = ()->()
+typealias PurchaseCancelCompletion = ()->()
+
 class VipViewController: ViewController {
 
     @IBOutlet var restoreBtn: UIButton!
@@ -17,6 +20,9 @@ class VipViewController: ViewController {
     @IBOutlet var timeLb: UILabel!
     @IBOutlet var priceLb: UILabel!
     @IBOutlet var bottomView: UIView!
+    var success:PurchaseSuccessCompletion? = nil
+    var cancel:PurchaseCancelCompletion? = nil
+    var isVip = false
     
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -50,21 +56,21 @@ class VipViewController: ViewController {
     func updateView() {
         if IAPManager.shared.purchased {
             self.restoreBtn.isHidden = true
-            self.priceLb.isHidden = true
+            //self.priceLb.isHidden = true
             self.tipLb.isHidden = true
             self.timeLb.isHidden = false
             self.payBtn.isHidden = true
             self.bottomView.isHidden = true
             self.timeLb.text = "已成为尊贵的高级会员\n请尽情享受会员功能"
         }else {
-            let str = "3天免费试用\n之后¥298/每年自动续订"
-            let attStr:NSMutableAttributedString = NSMutableAttributedString(string: str)
-            let range:NSRange = (str as NSString).range(of: "¥298")
-            attStr.addAttribute(NSAttributedString.Key.font, value: UIFont.pingFangSemibold(18), range: range)
-            attStr.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.hex(0x000000), range: range)
-            self.tipLb.attributedText = attStr
+//            let str = "3天免费试用\n之后¥298/每年自动续订"
+//            let attStr:NSMutableAttributedString = NSMutableAttributedString(string: str)
+//            let range:NSRange = (str as NSString).range(of: "¥298")
+//            attStr.addAttribute(NSAttributedString.Key.font, value: UIFont.pingFangSemibold(18), range: range)
+//            attStr.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.hex(0x000000), range: range)
+//            self.tipLb.attributedText = attStr
             self.restoreBtn.isHidden = false
-            self.priceLb.isHidden = false
+            //self.priceLb.isHidden = false
             self.tipLb.isHidden = false
             self.timeLb.isHidden = true
             self.payBtn.isHidden = false
@@ -76,6 +82,11 @@ class VipViewController: ViewController {
     // MARK: - Action
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.dismiss(animated: true, completion: nil)
+        if !IAPManager.shared.purchased {
+            self.cancel?()
+        }else {
+            self.success?()
+        }
     }
     
     @IBAction func restoreAction(_ sender: Any) {
@@ -87,6 +98,7 @@ class VipViewController: ViewController {
                 self?.enableUserInteraction()
                 if success {
                     self?.updateView()
+                    self?.success?()
                 }else {
                     SVProgressHUD.showError(withStatus: error)
                 }
